@@ -1,0 +1,17 @@
+---
+title: IU Ski & Snowboard Club Logo
+subtitle: Graphic Design
+layout: default
+modal-id: 4
+img: 
+  - name: iussc_white.png
+thumbnail: iussc_sticker.png
+alt: IU Ski & Snowboard Club Logo
+project-date: 2014
+client: IU Ski & Snowboard Club
+category: Graphic Design
+description: |
+  <h4>Project Description</h4>
+  <p>Just a couple logos I designed for the IU Ski and Snowboard Club. They ended up using the second one for club sweatshirts.</p>
+
+---

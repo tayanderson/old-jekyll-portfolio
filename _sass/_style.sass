@@ -1,0 +1,138 @@
+//.container
+//  width: 1300px
+  
+.navbar-fixed-top .navbar-brand
+  visibility: hidden
+  transition: none
+
+.navbar-shrink .navbar-brand
+  visibility: visible
+  
+.intro-heading
+  border: 10px solid white
+  padding: 15px 0
+  
+header .intro-text .intro-lead-in
+  text-transform: uppercase
+  font-family: latoregular
+  font-size: 30px
+  color: white
+  
+//.navbar-default .navbar-nav>.active>a  
+//  background-color: #fff
+//  color: #030303
+//  &:hover, &:active
+//    color: $primary
+//    background: #fff
+
+.no-background
+  background: transparent
+
+#portfolio 
+  background-color: #fff
+  
+  .portfolio-item .portfolio-link .portfolio-hover
+    background: rgba(255,160,136,.9)
+    +transition
+    .portfolio-hover-content
+      h3, h5
+        color: #fff
+      i
+        padding-top: 25px
+        
+  .portfolio-link
+    overflow: hidden
+    max-height: 250px
+    img
+      max-width: 100%
+      max-height: 100%
+      display: block
+      //max-height: 250px
+  //    margin: 0 auto
+  
+#about
+  background-color: #f7f7f7
+  p
+    color: #222
+    text-align: left
+  .img-circle
+    margin: 0 auto
+    background: url(../img/face.jpg) no-repeat
+    background-position: center 40%
+    background-size: cover
+    width: 300px
+    height: 300px
+    border-radius: 150px
+    -webkit-border-radius: 150px
+    -moz-border-radius: 150px
+    position: relative
+    transform: translateY(50%)
+  .btn
+    color: white
+    border: none
+    
+#resumeModal
+  text-align: center
+  img
+    width: 100%
+    height: 100%
+    
+#services
+  p
+    color: #222  
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus
+  background-color: $primary
+  color: white
+  
+.navbar-default .navbar-nav>li>a:hover
+  +transition
+
+header 
+  background: linear-gradient(rgba(255,97,56,.6), rgba(190,235, 159, .3)), url(../img/header3.jpeg)
+  background-size: cover
+
+.btn
+  background: rgba(255,160,136,.5)
+  border: 3px solid white
+  &:hover, &:focus, &:active
+    border-color: white
+    background-color: rgba(255,160,136, 1)
+    +transition
+  
+.portfolio-modal
+  p
+    color: #222
+  li
+    color: $primary-dark
+  strong
+    color: #222
+  .btn
+    border-color: rgba(255,160,136,.5)
+  .owl-carousel
+    img
+      max-height: 600px
+    
+.section-heading
+  color: $primary
+  
+h1, h2, h3, h4, h5
+  color: $primary-dark
+  
+#project1
+  background: $primary
+#project2
+  background: rgba(255,97,56, .9)
+#project3
+  background: $primary-light
+#project4
+  background: rgba(255,97,56, .7)
+#project5
+  background: $primary-lightest
+  
+#contact
+  .btn
+    border-color: rgba(255,160,136,.5)
+    
+.navbar-shrink
+  background-color: rgba(34,34,34, .8)

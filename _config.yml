@@ -1,0 +1,66 @@
+
+# Site settings
+title: Taylor Anderson
+email: andersts@indiana.edu
+description: "Taylor Anderson is an aspiring UX/Interacton Designer, who currently a student at Indiana University - Bloomington. She focuses on User Experience, Interaction, Web and Graphic Design."
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: Chicago, IL
+  
+#navigation links
+nav:
+  - name: portfolio
+  - name: about
+  - name: contact
+  
+#header
+role: UX Designer // Interaction Designer
+header-btn: Check Out My Work
+
+#portfolio
+p-subheading: Here is a collection of projects I have worked on.
+    
+#about
+a-subheading: Get to know me.
+blurb: |
+  <p>Hey! My name is Taylor Anderson and I'm an aspiring Interaction
+  Designer. I'm currently a student at Indiana University - Bloomington,
+  studying Informatics with a Human-Centered Computing cognate.
+  <br><br>
+  My design thinking and philosophy is very much influenced by my
+  personality traits as well as my life experiences. I like to think I am 
+  creative and unique but also practical and logical. And I believe those 
+  traits are represented in my designs. I always try to come up with 
+  innovative designs while also trying to keep them as simple and user-
+  friendly as possible. Creative and out-of-the-box designs are great as 
+  long as users can actually use them. There needs to be some balance. 
+  <br><br>
+  To me, a successful design is one that helps make someone’s life just a 
+  little better. Even if it’s as small as making an everday activity more     enjoyable or pleasant - at least it’s making some sort of impact on         someone.
+  <br><br>
+  Other than IxD stuff, I love to cook/eat food (well...mostly eat, let's     be real), snowboard, and workout.
+  </p>
+  
+#contact
+c-subheading: Let's talk. You can get a hold of me by filling out the form below, by phone or email. I look forward to hearing from you!
+
+#footer
+social:
+  - title: linkedin
+    url: https://www.linkedin.com/in/tayloranderson1
+  - title: github
+    url: https://github.com/tayanderson
+
+  
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+sass:
+    sass_dir: _sass
+    style: :compressed
+    
+port: 4000
+
+exclude: [".gitignore","README.md",]

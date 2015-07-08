@@ -1,0 +1,51 @@
+---
+title: SafePath Application
+subtitle: Design Concept
+layout: default
+modal-id: 2
+img: 
+  - name: safepath_all.png
+  - name: safepath_sketch.jpg
+  - name: safepath_1.png
+  - name: safepath_2.png
+  - name: safepath_3.png
+  - name: safepath_4.png
+  - name: safepath_lock.png
+thumbnail: safepath-hand.jpg
+alt: Mockup of SafePath Mobile Application
+project-date: April 2015
+client: Educational
+category: Design Concept
+description: |
+
+  <h4>Project Description</h4>
+  <p>For my HCI/d class, our task was to design something that will improve public safety. The problem my team and I decided to address was walk safety, especially at night. As college students, we all know the dangers of walking home alone at night. Our goal was to design something that will help anyone walking home at night feel safer and more confident.
+  <br><br>
+  We designed a mobile application that we named, SafePath, which gives the user various walking paths to their destination based on the surrounding area's safeness level.
+  <br><br>
+  <i>We designed our concept following a modified version of the PRInCiPleS design framework, an organizing framework used in the HCI/d program at IU.</i></p>
+
+  <h5>Predispositions</h5>
+  <p>Most of the time, people feel unsafe while walking at night because they don't know where they are or aren't familiar with the area and/or are walking alone.</p>
+
+  <h5>Research</h5>
+  <p>In order to figure out the features we should include in our app, we interviewed a student at IU to get a better understanding to why people feel unsafe when walking home at night. She told us that she usually felt unsafe when in areas that were dully lit or less populated.</p>
+
+  <h5>Insights</h5>
+  <p>How can we help the user feel safer and more comfortable while walking alone at night?</p>
+
+  <h5>Concept</h5>
+  <p>The main function of SafePath is to provide the user with paths based on the area's safeness. The safety percentages are calculated based on the amount of people that are generally in the area, the amount of crime alerts that have occurred in the area, and the length of time that the path is in the area. While the safest route is always the recommended route, the user has the ability to choose any route they would like, including short but less safe routes. The user also has the option to use the "WalkingBuddy" feature, which is basically, Uber for walking. The app will give the user a list of people that they could walk with based on their destination and the user's gender preference in walking buddy. To ensure the safety of the students who use the application, anyone who wants to use it must enter their university ID to verify that they are students before they are allowed access.</p>
+  <br><br>
+  <h5>Modifications</h5>
+  <div class="row">
+  <div class="col-lg-6">
+  <img src="../assets/img/portfolio/safepath_1modified.png" class="img-responsive"></div>
+  <div class="col-lg-6">
+  <img src="../assets/img/portfolio/safepath_4modified.png" class="img-responsive"></div>
+  </div>
+  <p>When we showed our design to our interviewee for feedback, she pointed out that while we know that the walking partner is an IU student; there is no guarantee that they will be a "nice" IU student. To fix this potential safety issue, we gave the app the ability to show rating for the Walking Buddies. We based this off of the rating system that Uber uses.</p>
+  <p>
+  Our user also pointed out a potential issue with the emergency button. Originally, we thought it would be a good idea to put an emergency button on the lock screen of the phone. This button would alert the police and other people that you were in trouble. But, after thinking it over, we decided that the iPhone and other popular phones have emergency buttons already on the lock screen. We decided to get rid of this because we thought that a button on the lock screen would have too much of a risk of false emergency calls if your finger actually touched the button.</p>
+
+---
