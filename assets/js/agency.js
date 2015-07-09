@@ -35,3 +35,5 @@ $('div.modal').on('show.bs.modal', function() {
 		}
 	}
 });
+
+$(function () { $("input,textarea").not("[type=submit]").jqBootstrapValidation(); } );
