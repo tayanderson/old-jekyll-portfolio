@@ -8,7 +8,7 @@
  * http://ReactiveRaven.github.com/jqBootstrapValidation/
  */
 
-(function( $ ){
+(function ($) {
 
 	var createdElements = [];
 
@@ -19,17 +19,17 @@
 			preventSubmit: true, // stop the form submit event from firing if validation fails
 			submitError: false, // function called if there is an error when trying to submit
 			submitSuccess: false, // function called just before a successful submit event is sent to the server
-            semanticallyStrict: false, // set to true to tidy up generated HTML output
+      semanticallyStrict: false, // set to true to tidy up generated HTML output
 			autoAdd: {
 				helpBlocks: true
 			},
-            filter: function () {
-                // return $(this).is(":visible"); // only validate elements you can see
-                return true; // validate everything
-            }
+      filter: function () {
+        // return $(this).is(":visible"); // only validate elements you can see
+        return true; // validate everything
+      }
 		},
     methods: {
-      init : function( options ) {
+      init : function (options) {
 
         var settings = $.extend(true, {}, defaults);
 
@@ -38,7 +38,7 @@
         var $siblingElements = this;
 
         var uniqueForms = $.unique(
-          $siblingElements.map( function () {
+          $siblingElements.map(function () {
             return $(this).parents("form")[0];
           }).toArray()
         );
@@ -78,7 +78,7 @@
           }
         });
 
-        return this.each(function(){
+        return this.each(function () {
 
           // Get references to everything we're interested in
           var $this = $(this),
@@ -89,9 +89,9 @@
 
           // create message container if not exists
           if (!$helpBlock.length && settings.options.autoAdd && settings.options.autoAdd.helpBlocks) {
-              $helpBlock = $('<div class="help-block" />');
-              $controlGroup.find('.controls').append($helpBlock);
-							createdElements.push($helpBlock[0]);
+            $helpBlock = $('<div class="help-block" />');
+            $controlGroup.find('.controls').append($helpBlock);
+				    createdElements.push($helpBlock[0]);
           }
 
           // =============================================================
@@ -239,8 +239,8 @@
           var validatorNamesToInspect = validatorNames;
           var newValidatorNamesToInspect = [];
 
-          do // repeatedly expand 'shortcut' validators into their real validators
-          {
+          // repeatedly expand 'shortcut' validators into their real validators
+          do {
             // Uppercase only the first letter of each name
             $.each(validatorNames, function (i, el) {
               validatorNames[i] = formatValidatorName(el);
@@ -251,11 +251,11 @@
 
             // Pull out the new validator names from each shortcut
             newValidatorNamesToInspect = [];
-            $.each(validatorNamesToInspect, function(i, el) {
+            $.each(validatorNamesToInspect, function (i, el) {
               if ($this.data("validation" + el + "Shortcut") !== undefined) {
                 // Are these custom validators?
                 // Pull them out!
-                $.each($this.data("validation" + el + "Shortcut").split(","), function(i2, el2) {
+                $.each($this.data("validation" + el + "Shortcut").split(","), function (i2, el2) {
                   newValidatorNamesToInspect.push(el2);
                 });
               } else if (settings.builtInValidators[el.toLowerCase()]) {
@@ -274,7 +274,7 @@
 
             validatorNamesToInspect = newValidatorNamesToInspect;
 
-          } while (validatorNamesToInspect.length > 0)
+          } while (validatorNamesToInspect.length > 0);
 
           // =============================================================
           //                                       SET UP VALIDATOR ARRAYS
@@ -292,8 +292,7 @@
                 message
                   ? message
                   : "'" + el + "' validation failed <!-- Add attribute 'data-validation-" + el.toLowerCase() + "-message' to input to change this message -->"
-              )
-            ;
+              );
 
             $.each(
               settings.validatorTypes,
@@ -349,7 +348,7 @@
               }
             }
 
-            if (! foundValidator) {
+            if (!foundValidator) {
               $.error("Cannot find validation info for '" + el + "'");
             }
           });
@@ -478,12 +477,12 @@
                 // How many errors did we find?
                 if (settings.options.semanticallyStrict && errorsFound.length === 1) {
                   // Only one? Being strict? Just output it.
-                  $helpBlock.html(errorsFound[0] + 
-                    ( settings.options.prependExistingHelpBlock ? $helpBlock.data("original-contents") : "" ));
+                  $helpBlock.html(errorsFound[0] +
+                    (settings.options.prependExistingHelpBlock ? $helpBlock.data("original-contents") : ""));
                 } else {
                   // Multiple? Being sloppy? Glue them together into an UL.
                   $helpBlock.html("<ul role=\"alert\"><li>" + errorsFound.join("</li><li>") + "</li></ul>" +
-                    ( settings.options.prependExistingHelpBlock ? $helpBlock.data("original-contents") : "" ));
+                    (settings.options.prependExistingHelpBlock ? $helpBlock.data("original-contents") : ""));
                 }
               } else {
                 $controlGroup.removeClass("warning error success");
@@ -503,10 +502,10 @@
           });
         });
       },
-      destroy : function( ) {
+      destroy : function () {
 
         return this.each(
-          function() {
+          function () {
 
             var
               $this = $(this),
@@ -532,7 +531,7 @@
         );
 
       },
-      collectErrors : function(includeEmpty) {
+      collectErrors : function (includeEmpty) {
 
         var errorMessages = {};
         this.each(function (i, el) {
@@ -551,7 +550,7 @@
         return errorMessages;
 
       },
-      hasErrors: function() {
+      hasErrors: function () {
 
         var errorMessages = [];
 
@@ -584,8 +583,7 @@
             return !validator.lastValid;
           }
 
-          if (validator.lastFinished === true)
-          {
+          if (validator.lastFinished === true) {
             validator.lastValue = value;
             validator.lastValid = true;
             validator.lastFinished = false;
@@ -630,12 +628,11 @@
           };
         },
         validate: function ($this, value, validator) {
-          if (""+validator.lastValue === ""+value && validator.lastFinished === true) {
+          if ("" + validator.lastValue === "" + value && validator.lastFinished === true) {
             return validator.lastValid === false;
           }
 
-          if (validator.lastFinished === true)
-          {
+          if (validator.lastFinished === true) {
             validator.lastValue = value;
             validator.lastValid = true;
             validator.lastFinished = false;
@@ -644,7 +641,7 @@
               data: "value=" + value + "&field=" + $this.attr("name"),
               dataType: "json",
               success: function (data) {
-                if (""+validator.lastValue === ""+data.value) {
+                if ("" + validator.lastValue === "" + data.value) {
                   validator.lastValid = !!(data.valid);
                   if (data.message) {
                     validator.message = data.message;
@@ -680,7 +677,7 @@
 					return {regex: regexFromString($this.data("validation" + name + "Regex"))};
 				},
 				validate: function ($this, value, validator) {
-					return (!validator.regex.test(value) && ! validator.negative)
+					return (!validator.regex.test(value) && !validator.negative)
 						|| (validator.regex.test(value) && validator.negative);
 				}
 			},
@@ -690,7 +687,7 @@
 					return {};
 				},
 				validate: function ($this, value, validator) {
-					return !!(value.length === 0  && ! validator.negative)
+					return !!(value.length === 0  && !validator.negative)
 						|| !!(value.length > 0 && validator.negative);
 				},
         blockSubmit: true
@@ -705,7 +702,7 @@
 					return {"element": element};
 				},
 				validate: function ($this, value, validator) {
-					return (value !== validator.element.val() && ! validator.negative)
+					return (value !== validator.element.val() && !validator.negative)
 						|| (value === validator.element.val() && validator.negative);
 				},
         blockSubmit: true
@@ -716,7 +713,7 @@
 					return {max: $this.data("validation" + name + "Max")};
 				},
 				validate: function ($this, value, validator) {
-					return (parseFloat(value, 10) > parseFloat(validator.max, 10) && ! validator.negative)
+					return (parseFloat(value, 10) > parseFloat(validator.max, 10) && !validator.negative)
 						|| (parseFloat(value, 10) <= parseFloat(validator.max, 10) && validator.negative);
 				}
 			},
@@ -726,7 +723,7 @@
 					return {min: $this.data("validation" + name + "Min")};
 				},
 				validate: function ($this, value, validator) {
-					return (parseFloat(value) < parseFloat(validator.min) && ! validator.negative)
+					return (parseFloat(value) < parseFloat(validator.min) && !validator.negative)
 						|| (parseFloat(value) >= parseFloat(validator.min) && validator.negative);
 				}
 			},
@@ -736,7 +733,7 @@
 					return {maxlength: $this.data("validation" + name + "Maxlength")};
 				},
 				validate: function ($this, value, validator) {
-					return ((value.length > validator.maxlength) && ! validator.negative)
+					return ((value.length > validator.maxlength) && !validator.negative)
 						|| ((value.length <= validator.maxlength) && validator.negative);
 				}
 			},
@@ -746,7 +743,7 @@
 					return {minlength: $this.data("validation" + name + "Minlength")};
 				},
 				validate: function ($this, value, validator) {
-					return ((value.length < validator.minlength) && ! validator.negative)
+					return ((value.length < validator.minlength) && !validator.negative)
 						|| ((value.length >= validator.minlength) && validator.negative);
 				}
 			},
@@ -760,7 +757,7 @@
 					return {maxchecked: $this.data("validation" + name + "Maxchecked"), elements: elements};
 				},
 				validate: function ($this, value, validator) {
-					return (validator.elements.filter(":checked").length > validator.maxchecked && ! validator.negative)
+					return (validator.elements.filter(":checked").length > validator.maxchecked && !validator.negative)
 						|| (validator.elements.filter(":checked").length <= validator.maxchecked && validator.negative);
 				},
         blockSubmit: true
@@ -775,7 +772,7 @@
 					return {minchecked: $this.data("validation" + name + "Minchecked"), elements: elements};
 				},
 				validate: function ($this, value, validator) {
-					return (validator.elements.filter(":checked").length < validator.minchecked && ! validator.negative)
+					return (validator.elements.filter(":checked").length < validator.minchecked && !validator.negative)
 						|| (validator.elements.filter(":checked").length >= validator.minchecked && validator.negative);
 				},
         blockSubmit: true
@@ -851,12 +848,11 @@
 		return name
 			.toLowerCase()
 			.replace(
-				/(^|\s)([a-z])/g ,
-				function(m,p1,p2) {
-					return p1+p2.toUpperCase();
+				/(^|\s)([a-z])/g,
+				function (m, p1, p2) {
+					return p1 + p2.toUpperCase();
 				}
-			)
-		;
+			);
 	};
 
 	var getValue = function ($this) {
@@ -882,7 +878,9 @@
    * http://stackoverflow.com/questions/359788/how-to-execute-a-javascript-function-when-i-have-its-name-as-a-string#answer-359910
    * Short link: http://tinyurl.com/executeFunctionByName
   **/
-  function executeFunctionByName(functionName, context /*, args*/) {
+  
+  /*, args*/
+  function executeFunctionByName(functionName, context) {
     var args = Array.prototype.slice.call(arguments).splice(2);
     var namespaces = functionName.split(".");
     var func = namespaces.pop();
