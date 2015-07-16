@@ -1,22 +1,22 @@
-$(function() {
+$(function () {
 
-    $("input,textarea").jqBootstrapValidation({
-        preventSubmit: true,
-        submitError: function($form, event, errors) {
+ $("input,textarea").jqBootstrapValidation({
+  preventSubmit: true,
+  submitError: function ($form, event, errors) {
             // additional error messages or events
-        },
-        submitSuccess: function($form, event) {
-            event.preventDefault(); // prevent default submit behaviour
-            // get values from FORM
-            var name = $("input#name").val();
-            var email = $("input#email").val();
-            var phone = $("input#phone").val();
-            var message = $("textarea#message").val();
-            var firstName = name; // For Success/Failure Message
-            // Check for white space in name for Success/Fail message
-            if (firstName.indexOf(' ') >= 0) {
-                firstName = name.split(' ').slice(0, -1).join(' ');
-            }
+  },
+  submitSuccess: function ($form, event) {
+   event.preventDefault(); // prevent default submit behaviour
+   // get values from FORM
+   var name = $("input#name").val();
+   var email = $("input#email").val();
+   var phone = $("input#phone").val();
+   var message = $("textarea#message").val();
+   var firstName = name; // For Success/Failure Message
+   // Check for white space in name for Success/Fail message
+   if (firstName.indexOf(' ') >= 0) {
+       firstName = name.split(' ').slice(0, -1).join(' ');
+   }
             $.ajax({
                 url: "././mail/contact_me.php",
                 type: "POST",
@@ -27,7 +27,7 @@ $(function() {
                     message: message
                 },
                 cache: false,
-                success: function() {
+                success: function () {
                     // Success message
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
@@ -40,7 +40,7 @@ $(function() {
                     //clear all fields
                     $('#contactForm').trigger("reset");
                 },
-                error: function() {
+                error: function () {
                     // Fail message
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
@@ -52,7 +52,7 @@ $(function() {
                 },
             })
         },
-        filter: function() {
+        filter: function () {
             return $(this).is(":visible");
         },
     });
