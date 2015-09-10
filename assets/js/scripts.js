@@ -5,5 +5,5 @@ $(document).ready(function () {
         paginationSpeed : 400,
         singleItem: true,
         autoHeight: true
-     })
+     }); 
 });
