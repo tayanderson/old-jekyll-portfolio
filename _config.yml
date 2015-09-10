@@ -44,7 +44,9 @@ blurb: |
   
 #contact
 c-subheading: |
-  Let's talk.<br>You can get a hold of me by filling out the form below, by phone (708-372-0360) or email (andersts@indiana.edu). I look forward to hearing from you!
+  Let's talk. You can get a hold of me by filling out the form below, by phone or email. I look forward to hearing from you!
+  <br>Phone: 708-372-0360
+  <br>Email: andersts@indiana.edu
 
 #footer
 social:
