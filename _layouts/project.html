@@ -6,6 +6,16 @@ layout: default-page
 
   <div class="row row-padding">
     <div class="seven columns">
+
+      <div class="PageNavigation">
+        {% if page.previous.url %}
+          <a class="prev" href="{{page.previous.url}}">&laquo; Previous</a>
+        {% endif %}
+        {% if page.next.url %}
+          <a class="next" href="{{page.next.url}}">Next &raquo;</a>
+        {% endif %}
+      </div>
+
       <h2>{{page.title}}</h2>
       <p>{{page.description}}{{page.name}}</p>
       </div>
