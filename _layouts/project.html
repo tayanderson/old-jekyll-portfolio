@@ -4,10 +4,8 @@ layout: default-page
 
 <div class="container">
 
-  <div class="row row-padding">
-    <div class="seven columns">
-
-      <div class="PageNavigation">
+  <div class="row">
+          <div class="PageNavigation">
         {% if page.previous.url %}
           <a class="prev" href="{{page.previous.url}}">&laquo; Previous</a>
         {% endif %}
@@ -15,6 +13,10 @@ layout: default-page
           <a class="next" href="{{page.next.url}}">Next &raquo;</a>
         {% endif %}
       </div>
+  </div>
+  
+  <div class="row row-padding">
+    <div class="seven columns">
 
       <h2>{{page.title}}</h2>
       <p>{{page.description}}{{page.name}}</p>
