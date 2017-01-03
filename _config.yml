@@ -44,3 +44,5 @@ gems:
 collections:
   projects:
     output: true
+
+permalink: pretty
