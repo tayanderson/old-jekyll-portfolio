@@ -2,19 +2,45 @@
 layout: default
 ---
 
-<div class="home">
+<div class="bg-wrapper"></div>
 
-  <h1>Posts</h1>
+<div class="home-nav">
+	<a href="/work.html" id="upper-left">Work</a>
+	<a href="/about.html" id="upper-right">About</a>
+	<a href="TaylorAnderson---Resume.pdf" id="lower-left">Resume</a>
+	<a href="/about.html" id="lower-right">Contact</a>
+</div>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+<div class="outter-wrapper animsition">
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+	<div class="middle-wrapper">
 
+		<div class="inner-wrap">
+			<div class="logo-wrapper">
+				<img class="logo" src="assets/images/ta-logo.svg">
+			</div>
+
+			<div class="home-title">
+				<h2>Taylor Anderson</h2>
+				<h5>Developer + Designer</h45>
+			</div>
+
+			<div class="social-links">
+				<a href=""><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+				<a href=""><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+				<a href=""><i class="fa fa-behance fa-lg" aria-hidden="true"></i></a>
+			</div>
+
+
+<!-- 			<nav class="home-nav">
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/about.html">About</a></li>
+					<li><a href="/work.html">Work</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+				</ul>
+			</nav> -->
+
+		</div>
+	</div>
 </div>

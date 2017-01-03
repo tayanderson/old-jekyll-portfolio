@@ -1,73 +1,46 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
 title: Taylor Anderson
-email: andersts@indiana.edu
-description: "Taylor Anderson is an aspiring UX/Interacton Designer, who currently a student at Indiana University - Bloomington. She focuses on User Experience, Interaction, Web and Graphic Design."
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
 
-# Postal address (add as many lines as necessary)
-address:
-  - line: Chicago, IL
-  
-#navigation links
-nav:
-  - name: portfolio
-  - name: about
-  - name: contact
-  
-#header
-role: UX Designer // Interaction Designer
-header-btn: Check Out My Work
-
-#portfolio
-p-subheading: Here is a collection of projects I have worked on.
-    
-#about
-a-subheading: Get to know me.
-blurb: |
-  <p>Hey! My name is Taylor Anderson and I'm an aspiring Interaction
-  Designer. I'm currently a student at Indiana University - Bloomington,
-  studying Informatics with a Human-Centered Computing cognate.
-  <br><br>
-  My design thinking and philosophy is very much influenced by my
-  personality traits as well as my life experiences. I like to think I am 
-  creative and unique but also practical and logical. And I believe those 
-  traits are represented in my designs. I always try to come up with 
-  innovative designs while also trying to keep them as simple and user-
-  friendly as possible. Creative and out-of-the-box designs are great as 
-  long as users can actually use them. There needs to be some balance. 
-  <br><br>
-  To me, a successful design is one that helps make someone’s life just a 
-  little better. Even if it’s as small as making an everday activity more enjoyable or pleasant - at least it’s making some sort of impact on         someone.
-  <br><br>
-  Other than IxD stuff, I love to cook/eat food (well...mostly eat, let's     be real), snowboard, and workout.
-  </p>
-  
-#contact
-c-subheading: Let's talk.
-c-blurb: |
-  <p>You can get a hold of me by filling out the form below, by phone or email. I look forward to hearing from you!
-  <br>
-  <br>Phone: 708-372-0360
-  <br>Email: andersts@indiana.edu
-  <br><br><br><br>
-  </p>
-
-#footer
-social:
-  - title: linkedin
-    url: https://www.linkedin.com/in/tayloranderson1
-  - title: github
-    url: https://github.com/tayanderson
-
-  
-# Build settings
+# Markdown settings
 markdown: kramdown
-permalink: pretty
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
+# Sass settings
 sass:
-    sass_dir: _sass
-    style: :compressed
-    
-port: 4000
+  add_charset: true
+  sass_dir: assets/sass
+  style: :compressed
 
-exclude: [".gitignore","README.md",]
+# Build settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - README.md
+  - CNAME
+  - node_modules
+  - gulpfile.js
+
+# Plugin settings
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+
+collections:
+  projects:
+    output: true

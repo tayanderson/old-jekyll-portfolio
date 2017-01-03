@@ -1,0 +1,19 @@
+{
+  "name": "portfolio2016",
+  "version": "1.0.0",
+  "description": "Jekyll Boilerplate is a lightweight and cleaned up version of the initial [Jekyll](https://jekyllrb.com/) setup. The motivation behind this project was for me to avoid doing the same things over and over every time I build yet another site with Jekyll.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.16.0",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.5.2",
+    "jquery": "^3.1.1",
+    "lodash": "^4.16.2"
+  }
+}

@@ -1,0 +1,27 @@
+---
+layout: default-page
+---
+
+<div class="container">
+
+  <div class="row row-padding">
+    <div class="seven columns">
+      <h2>{{page.title}}</h2>
+      <p>{{page.description}}{{page.name}}</p>
+      </div>
+
+    <div class="four columns offset-by-one side-info">
+      <h6>Client: <span>{{ page.client }}</span></h6>
+      <h6>Project Type: <span>{{ page.type }}</span></h6>
+      <h6>Responsibilities: <span>{{ page.responsibilities }}</span></h6>
+      <h6>Date Completed: <span>{{ page.date-completed }}</span></h6>
+    </div>
+  </div>
+
+  <div class="row row-padding u-max-full-width">
+    <img src="../assets/images/project-imgs/project{{page.project-num}}/main.png" class="indiv-proj-img">
+  </div>
+
+  {{ content }}
+
+</div>
