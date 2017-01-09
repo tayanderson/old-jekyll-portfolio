@@ -102,6 +102,7 @@ html {
 	visibility: hidden;
 }
 
+.mobile-nav-home {visibility: visible;}
 
 .menui {
   background: #000;
@@ -122,6 +123,7 @@ html {
   top: 0;
   left: 10px;
   cursor: pointer;
+  display: initial;
 }
 
 .main-nav {
@@ -356,6 +358,8 @@ html {
 //Desktop 
  @media all and #{$desktop} {
 
+ 	#mobile-nav-home {visibility: hidden;}
+
  	.home-nav {
  		visibility: visible; 
  		a {
@@ -398,7 +402,6 @@ html {
 			position: absolute;
 		} 
  	}
- 	.icon {visibility:hidden;}
  	.site-title {
  		display: none;
  	}
