@@ -5,15 +5,12 @@ project-num: 1
 title: CampusConnect
 
 description: | 
-  CampusConnect (CC) is a mobile web application that is functional on both IOS and Android platforms. It provides a dynamic event hub to forge an easy to use, low maintenance, and interactive connection between students and student organizations. CC allows students to filter events by tags and location in order to find the most relevant events to them.
-
-  This was my team's Capstone Project.
-
-  We created CampusConnect with AngularJS, Ionic Framework and Backand.
+  CampusConnect (CC) is a mobile web application that is functional on both IOS and Android platforms. It provides a dynamic event hub to forge an easy to use, low maintenance, and interactive connection between students and student organizations. CC allows students to filter events by tags and location in order to find the most relevant events to them.<br><br>
+  We created CampusConnect with <strong>AngularJS, Ionic Framework</strong> and <strong>Backand</strong>.
 
 client: Academic
 type: Hybrid Mobile Application
-responsibilites: User Research, UI/UX Design, Front-End Development, User Testing
+responsibilities: User Research, UI/UX Design, Front-End Development, User Testing
 date-completed: Spring 2016
 ---
 
@@ -30,14 +27,14 @@ After our research, we made a Functionality List that included all the features 
 Once we listed all our features, we created Use Cases based on those features. 
 
 ##### Design
-I was in charge of creating the overall design of the app. First, I drew up a quick sketch of the main screens of our app. After that, I created some wireframes as well as well as a simple digital prototype.
+I was in charge of creating the overall design of the app. First, I drew up a quick sketch of the main screens of our app. After that, I created some wireframes, mockups and a simple digital prototype.
+
+<img src="../assets/images/project-imgs/project1/cc-wireframe-screens.png" class="indiv-proj-img">
 
 ##### Development
-I was also responsible for majority of the development of our application. In the early stages of our project, we decided to develop a hybrid application as a opposed to a native one. So, instead of using Swift for iOS or Java for Android, we used the Ionic Framework and AngularJS to create a hybrid application that could operate on both iOS and Android. This decision ended up saving us a lot of time and stress. We were also able to produce a quality product in a limited amount of time.
+I was also responsible for a large part of the development of our application. In the early stages of our project, we decided to develop a hybrid application as a opposed to a native one. So, instead of using Swift for iOS or Java for Android, we used the Ionic Framework and AngularJS to create a hybrid application that could operate on both iOS and Android without learning both languages. This decision ended up saving us a lot of time and stress. We were also able to produce a quality product in a limited amount of time.
 
-Our development process wasn't has difficult as majority of our classmates, but I'm not saying we didn't have a share of issues though.
-
-One of the major issues we had in development was getting the database connected with our app. It basically brought our development to a complete halt. For some reason, we couldn't connect to our school's SQL database with PHP. So, I found another solution: Backand. Backand is a Backend-as-a-Service that solved our database problem in minutes. Backand worked extremely well with Ionic and Angular and saved us so much time.
+One of the major issues we had in development was getting the database connected with our app. It basically brought our development to a complete halt. For some reason, we couldn't connect to our school's SQL database with PHP. So, we used a BaaS (Backend-As-A-Service) called BackAnd. Switching to this solved our database problem in minutes. Backand worked extremely well with Ionic and Angular and saved us so much time.
 
 ##### Finished Product
 After a semester of development, we had a pretty decent working version of CampusConnect. 

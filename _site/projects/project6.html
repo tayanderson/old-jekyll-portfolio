@@ -8,7 +8,6 @@
 
   <title>Expressive Face Robot</title>
   <meta name="description" content="Beginning StagesOur purpose for this project was to create a robot that could respond to its user’s emotions and observe the human-robot interaction. We want...">
-<!-- animsition.css -->
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="canonical" href="http://yourdomain.com/projects/project6.html">
 
@@ -49,10 +48,22 @@
 
       <div class="container">
 
+  <div class="row">
+          <div class="PageNavigation">
+        
+          <a class="prev" href="/projects/project5.html">&laquo; Previous</a>
+        
+        
+          <a class="next" href="/projects/project7.html">Next &raquo;</a>
+        
+      </div>
+  </div>
+  
   <div class="row row-padding">
     <div class="seven columns">
+
       <h2>Expressive Face Robot</h2>
-      <p>The purpose for this project was to create an expressive robot prototype and analyze the human-robot interaction. The Expressive Face Robot is a robot that can display facial emotions. My team and I created two prototypes, one with a moveable body and one with a stationary body. The moveable version could move its "face" up-and-down as well as side-to-side. This prototype was designed to be used in a variety of applications. The stationary version has more of a "cute" appearance. The idea was for this prototype to be used in more specific scenarios such as a device for children or a emotional support device. Both prototypes were built with Arduino and Raspberry Pi. The exteriors were 3D-printed.</p>
+      <p>The purpose for this project was to create an expressive robot prototype and analyze the human-robot interaction. The Expressive Face Robot is a robot that can display facial emotions. My team and I created a prototype using Raspberry Pi. The exterior of the prototype was 3D-printed.</p>
       </div>
 
     <div class="four columns offset-by-one side-info">
@@ -72,30 +83,41 @@
 
 <p>Thinking about its potential uses, we designed two different designs: A more general design that could be used in a variety of applications and a more specific design that could be used as more of a emotional companion or a companion for children.</p>
 
-<p>The more general design consisted of a robot that could move its “head” up-down and side-to-side while the other was more static.</p>
-
-<p>Technical-wise, we decided to use a Raspberry Pi and a TFL Screen for the “face” of the robot. The robot’s expressions would display on the screen. For the moveable prototype, along with the Raspberry Pi, we used an Ardunio Uno to control the movements of the robot.</p>
+<p>Technical-wise, we decided to use a Raspberry Pi and a TFL Screen for the “face” of the robot. The robot’s expressions would display on the screen.</p>
 
 <p><img src="../assets/images/project-imgs/project6/2015-11-17 10.29.31.jpg" class="indiv-proj-img" /></p>
 
 <h5 id="development--physical-computing">Development + Physical Computing</h5>
-<p>Once we knew what we wanted to do, I got started building. I was in charge of all the hardware and programming parts of the project.</p>
+<p>Once we knew what we wanted to do, I started building the prototype. I was in charge of all the hardware and programming parts of the project.</p>
 
 <p>While initially, we wanted the robot to be able to sense the user’s emotions, we, unfortunately, had to simplify that feature because of time constraints. So, we opted for more of a manual way of telling the robot what emotion they are feeling by pushing certain buttons (happy, angry, sad, etc.).</p>
 
-<p>The main (and hardest) part of the hardware portion of the project was getting the screen working with the Raspberry Pi. It took me several hours to get the screen working and displaying what I wanted it to. To do this, I had to install bunch of stuff on the Raspberry Pi to get it talking to the screen.</p>
+<p>The main (and hardest) part of the hardware portion of the project was getting the screen working with the Raspberry Pi. It took me several hours to get the screen working and displaying what I wanted it to. To do this, I had to install a lot things on the Raspberry Pi to get it talking to the screen.</p>
 
 <p>Once I got the screen working, next I started working on making the buttons work with the screen. Each button was supposed to display a different emotion on the screen. I used a breadboard to get the buttons working before I soldered them to the screen.</p>
 
-<p>As for the exterior of the robot, we decided to 3D print it because it was the easiest way to get all the hardware components to fit exactly how we wanted them to. We had to do several iterations of each design before we got them the way we wanted.</p>
+<p>As for the exterior of the robot, we decided to 3D print it because it was the easiest way to get all the hardware components to fit exactly how we wanted them to. We had to do several iterations of each design before we got them the way we wanted. We then made it a little “cuter” by adding some fluff to the exterior.</p>
 
-<h5 id="finished-prototypes">Finished Prototypes</h5>
-<p>While our prototypes weren’t perfect, they were a good start for us if we wanted to do further research in this area of understanding the human-robot interaction between humans and expressive robots.</p>
+<p><img src="../assets/images/project-imgs/project6/circuit1.jpg" class="indiv-proj-img" /></p>
+
+<h5 id="finished-prototype">Finished Prototype</h5>
+<p>While our prototype wasn’t perfect, it was a good start for us if we wanted to do further research in this area of understanding the human-robot interaction between humans and expressive robots.</p>
 
 <p>If I were to continue with this project, I would look further into adding a emotion sensing function for the robot. It would be a huge improvement if the robot could read the user’s facial expressions or body language and behave depending on that. That would require us to add some sort of camera or sensor that is programmed to analyze the user’s face and body language to determine what emotion the user is expressing.</p>
 
 <p>While that would improve the overall function of the robot, it would also raise some ethical/moral concerns. The robot would always be watching the user, which may make the user uncomfortable. If I were to do this, I must first address these possible issues to make the user more comfortable and more willing to use the robot.</p>
 
+
+  <div class="spacer"></div>
+    <div class="pg-nav-mobile">
+    
+      <a class="prev" href="/projects/project5.html"><i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i></a>
+    
+    <span>Expressive Face Robot</span>
+    
+      <a class="next" href="/projects/project7.html"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i></a>
+    
+  </div>
 
 </div>
 
@@ -108,6 +130,7 @@
 <script src="https://use.fontawesome.com/273bbb70ca.js"></script>
 <!-- animsition.js -->
 <script src="/assets/js/animsition.min.js" type="text/javascript"></script>
+
 <script src="/assets/js/app.js" type="text/javascript"></script>
 
   </body>
