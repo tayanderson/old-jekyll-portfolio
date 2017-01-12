@@ -2,12 +2,12 @@
 layout: project
 
 project-num: 8
-title: IU Ski Club Logo
+title: Aftermath
 
-description: During the time I was a member of the IU Ski and Snowboard Club, the club needed a new logo for the shirts for that year. I came up with a few designs for them. In the end, one of my designs was used for the club sweatshirts.
+description: This was inspired by post-apocalypse movies. With this image, I was trying to tell the story of an aftermath of an attack on a major city such as New York. A woman, who had managed to live by jumping in a sewer, comes out when it is all over only to see that the city where she lived was completely destroyed and she was the sole survivor. To tell this story, I had to make the destruction of the city in the image look realistic.
 
-client: IU Ski and Snowboard Club
-type: Logo Design
-responsibilities: Sketching, Logo Design
-date-completed: Fall 2014
+client: Academic
+type: Photo Manipulation
+responsibilities: Concept, Photoshop 
+date-completed: Spring 2016
 ---
