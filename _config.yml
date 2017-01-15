@@ -42,3 +42,5 @@ gems:
 collections:
   projects:
     output: true
+  about-gallery:
+    output: true

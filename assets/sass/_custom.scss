@@ -434,3 +434,17 @@ html {
 	.pg-nav-mobile {display:none;}
 	.spacer {display:none;}
  }
+
+.photo-gallery, .photo-gallery li {
+	list-style: none;
+	padding: 0;
+}
+
+.photo-gallery li {
+	display: inline-block;
+	width: 33%;
+}
+
+.photo-gallery li img {
+	width: 100%;
+}
