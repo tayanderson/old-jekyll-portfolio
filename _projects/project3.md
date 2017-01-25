@@ -1,7 +1,7 @@
 ---
 layout: project
 
-project-num: 9
+project-num: 3
 title: SDA Consulting Inc. Corporate Website
 
 description: SDA is a full-service IT consulting firm focused on delivering direct value by solving our customers’ business challenges with our technology solutions and services. I designed and developed their corporate website. <br><br><a href="http://sdaci.com">View Website</a>.
