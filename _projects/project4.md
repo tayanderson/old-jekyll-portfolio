@@ -2,12 +2,12 @@
 layout: project
 
 project-num: 4
-title: FWC Logo Design
+title: IU Ski Club Logo
 
-description: At Indiana University, I was part of the Fitness and Wellness Living-Learning Community. So, I volunteered to create a logo design for the t-shirts for that year.
+description: During the time I was a member of the IU Ski and Snowboard Club, the club needed a new logo for the shirts for that year. I came up with a few designs for them. In the end, one of my designs was used for the club sweatshirts.
 
-client: Fitness and Wellness Living-Learning Community
+client: IU Ski and Snowboard Club
 type: Graphic Design
-responsibilities: Sketches, Logo Design
-date-completed: Fall 2013
+responsibilities: Sketching, Logo Design
+date-completed: Fall 2014
 ---

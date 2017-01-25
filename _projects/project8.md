@@ -2,12 +2,12 @@
 layout: project
 
 project-num: 8
-title: Aftermath
+title: 0 to 100
 
-description: This was inspired by post-apocalypse movies. With this image, I was trying to tell the story of an aftermath of an attack on a major city such as New York. A woman, who had managed to live by jumping in a sewer, comes out when it is all over only to see that the city where she lived was completely destroyed and she was the sole survivor. To tell this story, I had to make the destruction of the city in the image look realistic.
+description: This piece shows the skill progression of a snowboarder. I was inspired by my own snowboarding experiences. I got the inspiration to add the light/brush effects to my project from artist and designer Chuck Anderson. Chuck Anderson is known for including glowing light type effects in his work. I used the light effects as an intresting way to visualize the skill progression. For example, the first image is showing his beginner stage so the effects looked a little messy to symbolize that. While, the effects in his expert stage look more clean.
 
 client: Academic
 type: Photo Manipulation
-responsibilities: Concept, Photoshop 
+responsibilities: Concept, Photoshop
 date-completed: Spring 2016
 ---
