@@ -44,3 +44,12 @@ collections:
     output: true
   about-gallery:
     output: true
+  photos:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: photos
+    values:
+      layout: photo

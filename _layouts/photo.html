@@ -1,0 +1,12 @@
+---
+layout: default-page
+---
+<div class="container" id="container">
+  <h5>{{page.title}}</h5>
+
+  <p>{% if page.exif.location.name %} {{ page.exif.location.name }}{% endif %}</p>
+    <img src="{{base.url}}/assets/images/photography/{{ page.image }}" alt="{{ page.title }}" class="photo-page u-max-full-width" />
+  {{ content }}
+
+	</div>
+</div>
