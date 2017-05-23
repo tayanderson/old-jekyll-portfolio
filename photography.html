@@ -14,7 +14,7 @@ layout: default-page
   			  	<div class="photo six columns">
 					<div class="info-wrap">
 						<div class="photo-info">
-							<h6>{{ photo.title }}</h6>
+							<h6>{{ photo.exif.location.name }}</h6>
 						</div>
 					</div>
 					<div class="photo-img" style="background: url(assets/images/photography/{{ photo.image }});"></div>
@@ -23,7 +23,7 @@ layout: default-page
 		  		<div class="photo six columns">
 						<div class="info-wrap">
 							<div class="photo-info">
-								<h6>{{ photo.title }}</h6>
+								<h6>{{ photo.exif.location.name }}</h6>
 							</div>
 						</div>
 						<div class="photo-img" style="background: url(assets/images/photography/{{ photo.image }});"></div>
