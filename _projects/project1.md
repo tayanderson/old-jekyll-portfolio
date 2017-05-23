@@ -1,7 +1,6 @@
 ---
 layout: project
-
-project-num: 1
+permalink: /campusconnect/
 title: CampusConnect
 
 description: | 
@@ -14,7 +13,7 @@ responsibilities: User Research, UI/UX Design, Front-End Development, User Testi
 date-completed: Spring 2016
 ---
 
-##### Beginning Stages
+##### Beginning Stage
 We wanted our project to focus on making it easier for students to find things they are interested in. At the time, there wasn't an easy way for IU students to find events and organizations that interest them. Information about events, clubs and other organizations were usually found on flyers scattered around campus or on Facebook. There wasn't really a unified way to finding that information. So, that's how we came up with CampusConnect.  
 
 There needed to be a way for students to easily find events and clubs as well as a way for those clubs and organizations to get their information out there. 
