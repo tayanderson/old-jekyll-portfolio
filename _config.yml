@@ -39,8 +39,6 @@ gems:
   - jekyll-feed
   - jekyll-sitemap
 
-permalink: pretty
-
 collections:
   projects:
     output: true
