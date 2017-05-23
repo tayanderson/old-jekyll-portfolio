@@ -6,22 +6,31 @@ layout: default-page
 
 	<div class="photos" id="photos">
 		
-<!-- 		{% assign sorted_photos = site.photos | sort: 'rating', 'last' %}
+		{% assign sorted_photos = site.photos | sort: 'rating', 'last' %}
   		{% for photo in sorted_photos %}
   		{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
   		{% if thecycle == 'odd' %}
   			<div class="row">
-  		{% endif %}
-
-  		<div class="photo six columns">
-				<div class="info-wrap">
-					<div class="photo-info">
-						<h6>{{ photo.title }}</h6>
+  			  	<div class="photo six columns">
+					<div class="info-wrap">
+						<div class="photo-info">
+							<h6>{{ photo.title }}</h6>
+						</div>
 					</div>
+					<div class="photo-img" style="background: url(assets/images/photography/{{ photo.image }});"></div>
 				</div>
-				<div class="photo-img" style="background: url(assets/images/photography/{{ photo.image }});"></div>
-		</div>
-		{% endfor %} -->
+		{% else %}
+		  		<div class="photo six columns">
+						<div class="info-wrap">
+							<div class="photo-info">
+								<h6>{{ photo.title }}</h6>
+							</div>
+						</div>
+						<div class="photo-img" style="background: url(assets/images/photography/{{ photo.image }});"></div>
+				</div>
+			</div> <!--Close row tag-->
+		{% endif %}
+		{% endfor %}
 
 	</div>
 </div>
