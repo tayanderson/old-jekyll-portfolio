@@ -4,8 +4,9 @@ layout: default-page
 
 <div class="container" id="container">
 	<div class="projects" id="projects">
-
-<!-- 		{% for project in site.projects %}
+		
+		{% assign sorted_projects = site.projects | sort: 'project-num', 'last' %}
+		{% for project in sorted_projects %}
 		{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
   		{% if thecycle == 'odd' %}
 		<div class="row">
@@ -36,7 +37,7 @@ layout: default-page
 				</div>
 			</div>
 		{% endif %}
-		{% endfor %} -->
+		{% endfor %}
 
 	</div>
 </div>
