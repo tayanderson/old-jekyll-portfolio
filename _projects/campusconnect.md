@@ -2,7 +2,7 @@
 layout: project
 permalink: /campusconnect/
 title: CampusConnect
-project-num: 1
+project-num: 2
 
 description: | 
   CampusConnect (CC) is a mobile web application that is functional on both IOS and Android platforms. It provides a dynamic event hub to forge an easy to use, low maintenance, and interactive connection between students and student organizations. CC allows students to filter events by tags and location in order to find the most relevant events to them.<br><br>

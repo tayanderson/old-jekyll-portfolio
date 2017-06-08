@@ -1,7 +1,7 @@
 ---
 layout: project
 
-project-num: 6
+project-num: 7
 title: Major Selection
 
 description: This a tablet/mobile application concept that could be used to help college students, mainly incoming freshman, pick a major based on a set of carefully selected questions, which depends on the college or university.
