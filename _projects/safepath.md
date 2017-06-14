@@ -62,7 +62,7 @@ The WalkingBuddy feature is somewhat similar to Uber, but for walking. The user 
 
 To ensure the safety of the students who use the application, anyone who wants to use it must (1) verify they are students of the university by entering their university ID and (2) give permission to the SafePath team to run a brief background check to make sure they haven’t committed any crimes before they are given access to use the application. Safety is the most important aspect of this concept, therefore, precautions must be put in place to create a safe and trustworthy experience for students using the application. Just because everyone who uses the app is a student at the same university doesn’t mean they can’t have malicious intentions. So, checking the background of potential users was just one way we thought that problem could be avoided.
 
-<img src="../assets/images/project-imgs/project2/sp-wireframe-screens.jpg" class="indiv-proj-img">
+<img src="../assets/images/project-imgs/safepath/sp-wireframe-screens.jpg" class="indiv-proj-img">
 
 ##### Feedback + Modfications
 Once we had our concept, we decided to do get some feedback. We showed our concept to the same participants that we interviewed in the research stage to get their feedback on it. 

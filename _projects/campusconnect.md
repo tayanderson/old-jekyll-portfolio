@@ -29,7 +29,7 @@ Once we listed all our features, we created Use Cases based on those features.
 ##### Design
 I was in charge of creating the overall design of the app. First, I drew up a quick sketch of the main screens of our app. After that, I created some wireframes, mockups and a simple digital prototype.
 
-<img src="../assets/images/project-imgs/project1/cc-wireframe-screens.png" class="indiv-proj-img">
+<img src="../assets/images/project-imgs/campusconnect/cc-wireframe-screens.png" class="indiv-proj-img">
 
 ##### Development
 I was also responsible for a large part of the development of our application. In the early stages of our project, we decided to develop a hybrid application as a opposed to a native one. So, instead of using Swift for iOS or Java for Android, we used the Ionic Framework and AngularJS to create a hybrid application that could operate on both iOS and Android without learning both languages. This decision ended up saving us a lot of time and stress. We were also able to produce a quality product in a limited amount of time.

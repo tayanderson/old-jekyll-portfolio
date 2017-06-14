@@ -19,7 +19,7 @@ Thinking about its potential uses, we designed two different designs: A more gen
 
 Technical-wise, we decided to use a Raspberry Pi and a TFL Screen for the "face" of the robot. The robot's expressions would display on the screen.
 
-<img src="../assets/images/project-imgs/project6/2015-11-17 10.29.31.jpg" class="indiv-proj-img">
+<img src="../assets/images/project-imgs/robot/2015-11-17 10.29.31.jpg" class="indiv-proj-img">
 
 ##### Development + Physical Computing
 Once we knew what we wanted to do, I started building the prototype. I was in charge of all the hardware and programming parts of the project. 
@@ -32,7 +32,7 @@ Once I got the screen working, next I started working on making the buttons work
 
 As for the exterior of the robot, we decided to 3D print it because it was the easiest way to get all the hardware components to fit exactly how we wanted them to. We had to do several iterations of each design before we got them the way we wanted. We then made it a little "cuter" by adding some fluff to the exterior.
 
-<img src="../assets/images/project-imgs/project6/circuit1.jpg" class="indiv-proj-img">
+<img src="../assets/images/project-imgs/robot/circuit1.jpg" class="indiv-proj-img">
 
 ##### Finished Prototype
 While our prototype wasn't perfect, it was a good start for us if we wanted to do further research in this area of understanding the human-robot interaction between humans and expressive robots.
