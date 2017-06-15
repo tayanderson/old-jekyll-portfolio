@@ -1,7 +1,7 @@
 ---
 layout: project
 
-project-num: 3
+project-num: 4
 title: SafePath
 
 description: SafePath is a mobile application concept that gives the user various walking paths to their destination based on the surrounding area's overall safeness level. The application also includes a "WalkingBuddy" feature, which gives students the option of walking home with another person if they are uncomfortable of walking alone. The user will be provided a list of other students in the area, who have also indicated they want someone to walk home with, based on their destination and the user's gender preference. Once both users agree, they will be able to see each other's location and any contact information they choose to share so they can meet up.<br><br>You can view the full project report for this project <a href="../assets/files/SafePath-ProjectReport.pdf">here</a>.

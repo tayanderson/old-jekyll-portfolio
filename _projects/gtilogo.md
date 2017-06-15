@@ -1,7 +1,7 @@
 ---
 layout: project
 
-project-num: 1
+project-num: 2
 title: GTI Logo Design
 
 client: Gordon Driveaway

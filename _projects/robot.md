@@ -1,7 +1,7 @@
 ---
 layout: project
 
-project-num: 8
+project-num: 9
 title: Expressive Face Robot
 
 description: The purpose for this project was to create an expressive robot prototype and analyze the human-robot interaction. The Expressive Face Robot is a robot that can display facial emotions. My team and I created a prototype using Raspberry Pi. The exterior of the prototype was 3D-printed.
