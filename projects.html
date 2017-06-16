@@ -19,7 +19,7 @@ layout: default-page
 						<h4>View Project</h4>
 					</div>
 				</div>
-				<div class="project-img" style="background: url(assets/images/project-imgs/{{ project.path | remove: '_projects/' | remove: '.md' }}/main.png);"></div>
+				<div class="project-img lazy" data-src="assets/images/project-imgs/{{ project.path | remove: '_projects/' | remove: '.md' }}/main.png";"></div>
 			</a>
 			</div>
 		{% else %}
@@ -32,7 +32,7 @@ layout: default-page
 							<h4>View Project</h4>
 						</div>
 					</div>
-					<div class="project-img" style="background: url(assets/images/project-imgs/{{ project.path | remove: '_projects/' | remove: '.md' }}/main.png);"></div>
+					<div class="project-img lazy" data-src="assets/images/project-imgs/{{ project.path | remove: '_projects/' | remove: '.md' }}/main.png";"></div>
 				</a>
 			</div>
 		</div>

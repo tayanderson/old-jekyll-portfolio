@@ -30,7 +30,7 @@ html {
 .bg-wrapper {
 	width: 100vw;
 	height: 100vh;
-	background: url(../images/bg-img2.png) no-repeat center center fixed; 
+	// background: url(../images/bg-img2.png) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -263,7 +263,6 @@ html {
    		box-sizing: padding-box;
   }
   .photo-info {
-  		transition: all ease .6s;
   		color: #fff;
 	}
 	h6 {
